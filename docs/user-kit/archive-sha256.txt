@@ -1,0 +1,1 @@
+ec125a4765f35f0c95024ee7c4eae0d7262c51b939cc3bca46cf113770fdfd78  PicoAmiibo-RP2040-kit.zip

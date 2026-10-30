@@ -1,0 +1,58 @@
+# Project status — 30 October 2026
+
+## English Manager 1.1.0
+
+English application, guide, errors, reward summaries, and maintained documentation.
+36 offline reward profiles cover 33 specific figures, including Mineru. The
+persistent **Show TOTK rewards** setting is retained, as is the existing user
+profile and wire protocol.
+
+Host suite: **54 Python/Qt tests PASS** after translation. The Windows EXE build
+uses the six-view isolated smoke test; its exact report and SHA256 are included
+with the release. Source and license distribution excludes all private libraries,
+amiibo data, authentication keys, game files, saves, and personal workstation paths.
+
+The English build has not received a new end-to-end hardware scan test.
+
+## Firmware and hardware evidence
+
+- **M0 PASS:** original brief inspected; exact PicoSwitch2 v2.5.0 pinned; licenses,
+  portable modules, and wireless dependencies recorded in docs/AUDIT_M0.md.
+- **M1 PASS, build/host:** actual ARM UF2 for PICO_BOARD=pico; no radio linkage;
+  11 rebuilt C tests and 13 Python tests passed. Flash/USB models are simulations.
+- **M2/M3 functional user evidence:** the controller/NFC path worked sufficiently
+  for the reported successful TOTK scan. No full bus trace was captured.
+- **M4 PASS, user report:** Epona appeared in TOTK after the 0.1.1 delivery.
+  This is a narrow functional result, not general qualification.
+- **M5 partial:** Windows library and Manager are implemented. Multiple hardware
+  slots and persistent console NFC writes remain out of scope.
+
+An earlier real Windows CLI load committed 540 bytes and read them back identically,
+followed by EXIT and controller-mode re-enumeration. A later native Manager
+observation identified installed firmware **0.1.1**, source prefix **1cba4c5b76c1**,
+PA1 confirmed, stored tag loaded, generation 1, not presented. USB serial identity
+does not establish the SHA256 of the installed firmware image.
+
+Manager 1.0.1 recorded a verified Zelda Super Smash Bros. transfer and a separate
+user-reported recognized result. This precedes the English release. Private
+library imports alone do not establish hardware validity for every file.
+
+## Preserved firmware deliveries
+
+- 0.1.0/P0: CDC, transactional storage, and a real Windows load/readback.
+- 0.1.1/P1: double-tap A added; release preceding the user-reported Epona result.
+- 0.1.2/P2: L+R removed at user request; short tap, double A and configuration
+  gestures pass host tests. This variant has **not** been qualified on the console.
+
+Original empty UF2 images remain separate and hash-verified. The English work does
+not change src/, include/, CMake, tag banks, or the installed Pico firmware.
+
+## Remaining qualification
+
+Physical interruption behavior, long-running USB/BOOTSEL timing, repeated reconnect
+cycles, broad game/figure compatibility, and NFC writes are not established.
+The tag starts ejected. Console NFC writes are rejected. Readback compares stored
+bytes but does not establish cryptographic authenticity.
+
+No tool modifies the Switch 2 or its save files. Firmware flashing remains manual.
+See USER_TEST.md for physical testing and MANAGER_USAGE.md for the desktop path.

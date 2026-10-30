@@ -1,0 +1,4468 @@
+{
+  "schema": 1,
+  "game": "Tears of the Kingdom",
+  "reviewed": "2026-10-30",
+  "sources": {
+    "datamine": {
+      "title": "JordanBTucker · datamined drop tables",
+      "url": "https://gist.github.com/jordanbtucker/a950e3a041b95867bc123b71c4cf7f28/4dd8cd25ce09ed1fdf9403614ea7c68ab812e81e",
+      "revision": "4dd8cd25ce09ed1fdf9403614ea7c68ab812e81e",
+      "input_sha256": "1f13e89cd5a2e21eb36a25fdb954eb8f868d1885f943bce3d672b2d2f505e150"
+    },
+    "wiki": {
+      "title": "Zelda Wiki · TOTK amiibo drop tables",
+      "url": "https://zeldawiki.wiki/w/index.php?title=Amiibo_in_Tears_of_the_Kingdom&oldid=1386889"
+    },
+    "tagmo": {
+      "title": "TagMo · public figure identifiers",
+      "url": "https://github.com/HiddenRamblings/TagMo/blob/d4e8246c9f087db70f2ad159a831f851127f033c/app/src/main/res/raw/amiibo.json"
+    },
+    "nintendo": {
+      "title": "Nintendo · using amiibo in TOTK",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/61937/p/988/c/950"
+    }
+  },
+  "profiles": [
+    {
+      "key": "847",
+      "name": "8-Bit Link",
+      "amiibo_ids": [
+        "01000000034f0902"
+      ],
+      "highlight": "Hero armor and sword · Pixel Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "5",
+          "items": [
+            {
+              "name": "Barrel",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-3",
+          "items": [
+            {
+              "name": "Bomb Barrel",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 70,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of the Hero",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of the Hero",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of the Hero",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Pixel Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Sword of the Hero",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "860",
+      "name": "Bokoblin",
+      "amiibo_ids": [
+        "01410000035c0902"
+      ],
+      "highlight": "Bokoblin Fabric · Boko equipment",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 90,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Bokoblin Guts",
+              "weight": 80,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Boko Bow",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Spiked Boko Bow",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Boko Shield",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Spiked Boko Shield",
+              "weight": 25,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Bokoblin Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "856",
+      "name": "Daruk",
+      "amiibo_ids": [
+        "0105000003580902"
+      ],
+      "highlight": "Vah Rudania Divine Helm · Goron-Champion Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Rock Salt",
+              "weight": 60,
+              "requires": ""
+            },
+            {
+              "name": "Flint",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Amber",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Opal",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cobble Crusher",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Cobble Crusher✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Vah Rudania Divine Helm",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Goron-Champion Fabric",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "27",
+      "name": "Ganondorf · Super Smash Bros.",
+      "amiibo_ids": [
+        "01020100001b0002"
+      ],
+      "highlight": "Dusk Claymore · Demon King Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "5",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Bomb Barrel",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Bokoblin Guts",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Moblin Guts",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 13,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Gerudo Claymore",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Gerudo Claymore✨",
+              "weight": 10,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Demon King Fabric",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Dusk Claymore",
+              "weight": 50,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1050",
+      "name": "Ganondorf · TOTK",
+      "amiibo_ids": [
+        "01020100041a0902"
+      ],
+      "highlight": "Gerudo-King Fabric · Gloom Sword",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "5",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Bomb Barrel",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Time Bomb",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Bokoblin Guts",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Moblin Guts",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Royal Broadsword",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Gloom Sword",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Gerudo-King Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "generic-link",
+      "name": "Generic Link · internal table",
+      "amiibo_ids": [],
+      "highlight": "Fish · Soldier and Knight weapons",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 34,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Claymore",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Spear",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Soldier's Claymore✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Soldier's Spear✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Claymore",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Halberd",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Claymore✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Halberd✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [
+        "Documented internal table; no released figure is automatically assigned to this profile."
+      ],
+      "special": []
+    },
+    {
+      "key": "generic-zelda",
+      "name": "Generic Zelda · internal table",
+      "amiibo_ids": [],
+      "highlight": "Plants · gems",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 18,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Bow",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Bow",
+              "weight": 15,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [
+        "Documented internal table; no released figure is automatically assigned to this profile."
+      ],
+      "special": []
+    },
+    {
+      "key": "853",
+      "name": "Guardian · BOTW",
+      "amiibo_ids": [
+        "0140000003550902"
+      ],
+      "highlight": "Ancient Blade · Ancient Sheikah Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "4",
+          "items": [
+            {
+              "name": "Iron Box",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Iron Box",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Rusty Shield",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Rusty Halberd",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Rusty Broadsword",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Rusty Claymore",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Ancient Blade",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Ancient Sheikah Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "851",
+      "name": "Link Archer · BOTW",
+      "amiibo_ids": [
+        "0100000003530902"
+      ],
+      "highlight": "Bows · Ancient Blade · Tunic of Memories Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 8,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 8,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Raw Meat",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 3,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Drumstick",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Thigh",
+              "weight": 3,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Raw Whole Bird",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 30,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Bow",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Bow",
+              "weight": 30,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Ancient Blade",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Tunic of Memories Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "852",
+      "name": "Link Rider · BOTW",
+      "amiibo_ids": [
+        "0100000003540902"
+      ],
+      "highlight": "Mushrooms · swords · Hylian-Hood Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hylian Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Stamella Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Chillshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sunshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Zapshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Rushroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Razorshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ironshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Silent Shroom",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Endura Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Truffle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Truffle",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Broadsword",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Broadsword✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Hylian-Hood Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "921",
+      "name": "Link · Link’s Awakening",
+      "amiibo_ids": [
+        "0100000003990902"
+      ],
+      "highlight": "Awakening armor · Egg Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "5",
+          "items": [
+            {
+              "name": "Barrel",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-3",
+          "items": [
+            {
+              "name": "Bomb Barrel",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 70,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Broadsword",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Broadsword✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Mask of Awakening",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of Awakening",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of Awakening",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Egg Fabric",
+              "weight": 25,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "844",
+      "name": "Link · Majora’s Mask",
+      "amiibo_ids": [
+        "01000000034c0902"
+      ],
+      "highlight": "Fierce Deity armor and sword · Majora Mask Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hylian Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Stamella Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Chillshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sunshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Zapshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Rushroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Razorshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ironshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Silent Shroom",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Endura Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Truffle",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Truffle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Knight's Broadsword",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Fierce Deity Mask",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Fierce Deity Armor",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Fierce Deity Boots",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Majora's Mask Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Fierce Deity Sword",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "843",
+      "name": "Link · Ocarina of Time",
+      "amiibo_ids": [
+        "01000000034b0902"
+      ],
+      "highlight": "Time armor · Biggoron Sword · Lon Lon Ranch Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 90,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 80,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Claymore",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Claymore✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Lon Lon Ranch Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Biggoron's Sword",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "846",
+      "name": "Link · Skyward Sword",
+      "amiibo_ids": [
+        "01000000034e0902"
+      ],
+      "highlight": "Sky armor · White Sword of the Sky · Sword-Spirit Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "4",
+          "items": [
+            {
+              "name": "Wooden Box",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "2-4",
+          "items": [
+            {
+              "name": "Arrow x5",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Arrow",
+              "weight": 80,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of the Sky",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of the Sky",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of the Sky",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Sword-Spirit Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "White Sword of the Sky",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "4",
+      "name": "Link · Super Smash Bros.",
+      "amiibo_ids": [
+        "0100000000040002"
+      ],
+      "highlight": "Epona · Twilight armor · Mirror of Twilight Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Apple",
+              "weight": 15,
+              "requires": ""
+            },
+            {
+              "name": "Palm Fruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Wildberry",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Acorn",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chickaloo Tree Nut",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Hydromelon",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Spicy Pepper",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Voltfruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Fleet-Lotus Seeds",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Bananas",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Arrow x5",
+              "weight": 60,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Mirror of Twilight Fabric",
+              "weight": 25,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine",
+        "wiki"
+      ],
+      "notes": [],
+      "special": [
+        "Epona: a special first-scan case in a location where horses can appear. Later scans do not guarantee another horse. The Manager cannot read game progress or scan history."
+      ]
+    },
+    {
+      "key": "1048",
+      "name": "Link · TOTK",
+      "amiibo_ids": [
+        "0100000004180902"
+      ],
+      "highlight": "Champion Leathers Fabric · mushrooms",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hylian Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Stamella Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Chillshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sunshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Zapshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Rushroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Razorshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ironshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Silent Shroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Skyshroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Brightcap",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Endura Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Truffle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Truffle",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Knight's Broadsword",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Champion's Leathers Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "845",
+      "name": "Link · Twilight Princess",
+      "amiibo_ids": [
+        "01000000034d0902"
+      ],
+      "highlight": "Epona · Twilight armor · Mirror of Twilight Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Apple",
+              "weight": 15,
+              "requires": ""
+            },
+            {
+              "name": "Palm Fruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Wildberry",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Acorn",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chickaloo Tree Nut",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Hydromelon",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Spicy Pepper",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Voltfruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Fleet-Lotus Seeds",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Bananas",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Arrow x5",
+              "weight": 60,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of Twilight",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Mirror of Twilight Fabric",
+              "weight": 25,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine",
+        "wiki"
+      ],
+      "notes": [],
+      "special": [
+        "Epona: a special first-scan case in a location where horses can appear. Later scans do not guarantee another horse. The Manager cannot read game progress or scan history."
+      ]
+    },
+    {
+      "key": "mineru",
+      "name": "Mineru Construct · TOTK",
+      "amiibo_ids": [
+        "010d000004a70902"
+      ],
+      "highlight": "Sage of Spirit Fabric · Zonaite and Construct bows",
+      "sources": [
+        "wiki",
+        "tagmo"
+      ],
+      "special": [],
+      "notes": [
+        "A compatible game version is required. The public figure ID is cross-checked against the pinned TagMo catalog."
+      ],
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "4",
+          "items": [
+            {
+              "name": "Iron Box",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "3-5",
+          "items": [
+            {
+              "name": "Zonaite",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Construct Bow",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Strong Construct Bow",
+              "weight": 40,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Zonaite Bow",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sage of Spirit Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "858",
+      "name": "Mipha",
+      "amiibo_ids": [
+        "01070000035a0902"
+      ],
+      "highlight": "Vah Ruta Divine Helm · Zora-Champion Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 34,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Zora Spear",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Zora Spear✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Vah Ruta Divine Helm",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Zora-Champion Fabric",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "default",
+      "name": "Other amiibo · generic rewards",
+      "amiibo_ids": [],
+      "highlight": "Materials and food · no exclusive Zelda rewards",
+      "sources": [
+        "wiki"
+      ],
+      "special": [],
+      "notes": [
+        "Documented fallback for other amiibo; an unlisted identifier does not confirm authenticity or an exclusive reward."
+      ],
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "3-5",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Hyrule Herb",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Apple",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Acorn",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Hylian Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Chillshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sunshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Zapshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Silent Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Endura Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Razorshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ironshroom",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Raw Prime Meat",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Truffle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Raw Meat",
+              "weight": 90,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Raw Prime Meat (no chest)",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "859",
+      "name": "Revali",
+      "amiibo_ids": [
+        "01080000035b0902"
+      ],
+      "highlight": "Vah Medoh Divine Helm · Rito-Champion Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Apple",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Palm Fruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Wildberry",
+              "weight": 15,
+              "requires": ""
+            },
+            {
+              "name": "Acorn",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chickaloo Tree Nut",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Hydromelon",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Spicy Pepper",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfruit",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fleet-Lotus Seeds",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Bananas",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Arrow x5",
+              "weight": 60,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x10",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Swallow Bow",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Falcon Bow",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Vah Medoh Divine Helm",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Rito-Champion Fabric",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1187",
+      "name": "Riju · TOTK",
+      "amiibo_ids": [
+        "0109000004a30902"
+      ],
+      "highlight": "Sage of Lightning Fabric · Gerudo equipment",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Drumstick",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Thigh",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Raw Whole Bird",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Gerudo Scimitar",
+              "weight": 40,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Gerudo Scimitar✨",
+              "weight": 30,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Gerudo Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sage of Lightning Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "wiki"
+      ],
+      "special": [],
+      "notes": [
+        "Requires a game version supporting the new sages (1.4.0 or later)."
+      ]
+    },
+    {
+      "key": "23",
+      "name": "Sheik",
+      "amiibo_ids": [
+        "0101010000170002"
+      ],
+      "highlight": "Sheik Mask · Sheik Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hylian Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Stamella Shroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Chillshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sunshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Zapshroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Rushroom",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Razorshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ironshroom",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Silent Shroom",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Endura Shroom",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Truffle",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Truffle",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 35,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Eightfold Blade",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Eightfold Blade✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Shield of the Mind's Eye",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Phrenic Bow",
+              "weight": 25,
+              "requires": "Complete Great Sky Island"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sheik's Mask",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Sheik Fabric",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1188",
+      "name": "Sidon · TOTK",
+      "amiibo_ids": [
+        "010a000004a40902"
+      ],
+      "highlight": "Sage of Water Fabric · Zora spears",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 34,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Zora Spear",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Zora Spear✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sage of Water Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "wiki"
+      ],
+      "special": [],
+      "notes": [
+        "Requires a game version supporting the new sages (1.4.0 or later)."
+      ]
+    },
+    {
+      "key": "22",
+      "name": "Toon Link · Super Smash Bros.",
+      "amiibo_ids": [
+        "0100010000160002"
+      ],
+      "highlight": "Wind armor · Sea-Breeze Boomerang · King of Red Lions Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 34,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 30,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Boomerang",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Boomerang✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "King of Red Lions Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Sea-Breeze Boomerang",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "848",
+      "name": "Toon Link · The Wind Waker",
+      "amiibo_ids": [
+        "0100010003500902"
+      ],
+      "highlight": "Wind armor · Sea-Breeze Boomerang · King of Red Lions Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Bass",
+              "weight": 34,
+              "requires": ""
+            },
+            {
+              "name": "Staminoka Bass",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chillfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sizzlefin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stealthfin Trout",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Armored Carp",
+              "weight": 12,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Porgy",
+              "weight": 6,
+              "requires": ""
+            },
+            {
+              "name": "Armored Porgy",
+              "weight": 6,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Bass",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Hearty Salmon",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 30,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Boomerang",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Boomerang✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Knight's Broadsword",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Broadsword✨",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of the Wind",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "King of Red Lions Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Sea-Breeze Boomerang",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "850",
+      "name": "Toon Zelda · The Wind Waker",
+      "amiibo_ids": [
+        "0101000003520902"
+      ],
+      "highlight": "Hero Shield · Bygone-Royal Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 18,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Shield",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 10,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Royal Shield",
+              "weight": 5,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Bygone-Royal Fabric",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Hero's Shield",
+              "weight": 50,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1189",
+      "name": "Tulin · TOTK",
+      "amiibo_ids": [
+        "010b000004a50902"
+      ],
+      "highlight": "Sage of Wind Fabric · bows and arrows",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Apple",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Palm Fruit",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Wildberry",
+              "weight": 15,
+              "requires": ""
+            },
+            {
+              "name": "Acorn",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Chickaloo Tree Nut",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Hydromelon",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Spicy Pepper",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Voltfruit",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fleet-Lotus Seeds",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Bananas",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Arrow x5",
+              "weight": 60,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x10",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Swallow Bow",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Falcon Bow",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sage of Wind Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "wiki"
+      ],
+      "special": [],
+      "notes": [
+        "Requires a game version supporting the new sages (1.4.0 or later)."
+      ]
+    },
+    {
+      "key": "857",
+      "name": "Urbosa",
+      "amiibo_ids": [
+        "0106000003590902"
+      ],
+      "highlight": "Vah Naboris Divine Helm · Gerudo-Champion Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Drumstick",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Raw Bird Thigh",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Raw Whole Bird",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Gerudo Scimitar",
+              "weight": 40,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Gerudo Scimitar✨",
+              "weight": 30,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Gerudo Shield",
+              "weight": 30,
+              "requires": "Complete Great Sky Island"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Vah Naboris Divine Helm",
+              "weight": 50,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Gerudo-Champion Fabric",
+              "weight": 50,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "591",
+      "name": "Wolf Link",
+      "amiibo_ids": [
+        "01030000024f0902"
+      ],
+      "highlight": "Meat · Mirror of Twilight Fabric (no wolf companion)",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "10",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 80,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 15,
+              "requires": ""
+            },
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "10",
+          "items": [
+            {
+              "name": "Seared Gourmet Steak",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Roasted Whole Bird",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Raw Whole Bird",
+              "weight": 25,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Mirror of Twilight Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [
+        "In TOTK, Wolf Link provides meat and a fabric; it does not summon the wolf companion from BOTW."
+      ],
+      "special": []
+    },
+    {
+      "key": "892",
+      "name": "Young Link · Super Smash Bros.",
+      "amiibo_ids": [
+        "01000000037c0002"
+      ],
+      "highlight": "Time armor · Biggoron Sword · Lon Lon Ranch Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Raw Meat",
+              "weight": 90,
+              "requires": ""
+            },
+            {
+              "name": "Raw Prime Meat",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Raw Gourmet Meat",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Arrow x5",
+              "weight": 80,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Soldier's Claymore",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Claymore✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cap of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Tunic of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Trousers of Time",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Lon Lon Ranch Fabric",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Biggoron's Sword",
+              "weight": 20,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1190",
+      "name": "Yunobo · TOTK",
+      "amiibo_ids": [
+        "010c000004a60902"
+      ],
+      "highlight": "Sage of Fire Fabric · Goron weapons",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "6-8",
+          "items": [
+            {
+              "name": "Rock Salt",
+              "weight": 60,
+              "requires": ""
+            },
+            {
+              "name": "Flint",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Amber",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Opal",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Cobble Crusher",
+              "weight": 60,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Cobble Crusher✨",
+              "weight": 40,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Sage of Fire Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "wiki"
+      ],
+      "special": [],
+      "notes": [
+        "Requires a game version supporting the new sages (1.4.0 or later)."
+      ]
+    },
+    {
+      "key": "1044",
+      "name": "Zelda and Loftwing",
+      "amiibo_ids": [
+        "0101030004140902"
+      ],
+      "highlight": "Goddess Fabric · gems",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 18,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Bow",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Bow",
+              "weight": 15,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Goddess Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "854",
+      "name": "Zelda · BOTW",
+      "amiibo_ids": [
+        "0101000003560902"
+      ],
+      "highlight": "Gems · Hyrule-Princess Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "2-3",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 3,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Shield",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Shield",
+              "weight": 15,
+              "requires": "Visit Depths"
+            },
+            {
+              "name": "Royal Shield",
+              "weight": 5,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Hyrule-Princess Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "14",
+      "name": "Zelda · Super Smash Bros.",
+      "amiibo_ids": [
+        "01010000000e0002"
+      ],
+      "highlight": "Dusk Bow · Princess of Twilight Fabric",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 18,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Bow",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Knight's Bow",
+              "weight": 15,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Princess of Twilight Fabric",
+              "weight": 50,
+              "requires": ""
+            },
+            {
+              "name": "Dusk Bow",
+              "weight": 50,
+              "requires": "Visit Depths"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    },
+    {
+      "key": "1049",
+      "name": "Zelda · TOTK",
+      "amiibo_ids": [
+        "0101000004190902"
+      ],
+      "highlight": "Princess Zelda Fabric · plants and gems",
+      "tables": [
+        {
+          "kind": "Normal",
+          "count": "8",
+          "items": [
+            {
+              "name": "Hyrule Herb",
+              "weight": 35,
+              "requires": ""
+            },
+            {
+              "name": "Cool Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Warm Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Electric Safflina",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Carrot",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Swift Violet",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Mighty Thistle",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Armoranth",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Fortified Pumpkin",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Blue Nightshade",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Stambulb",
+              "weight": 10,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "SmallHit",
+          "count": "1-2",
+          "items": [
+            {
+              "name": "Hearty Radish",
+              "weight": 30,
+              "requires": ""
+            },
+            {
+              "name": "Big Hearty Radish",
+              "weight": 10,
+              "requires": ""
+            },
+            {
+              "name": "Endura Carrot",
+              "weight": 40,
+              "requires": ""
+            },
+            {
+              "name": "Silent Princess",
+              "weight": 20,
+              "requires": ""
+            },
+            {
+              "name": "Sundelion",
+              "weight": 40,
+              "requires": ""
+            }
+          ]
+        },
+        {
+          "kind": "BigHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Amber",
+              "weight": 25,
+              "requires": ""
+            },
+            {
+              "name": "Opal",
+              "weight": 18,
+              "requires": ""
+            },
+            {
+              "name": "Topaz",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Sapphire",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Ruby",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Diamond",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Star Fragment",
+              "weight": 1,
+              "requires": ""
+            },
+            {
+              "name": "Luminous Stone",
+              "weight": 5,
+              "requires": ""
+            },
+            {
+              "name": "Soldier's Broadsword",
+              "weight": 20,
+              "requires": "Complete Great Sky Island"
+            },
+            {
+              "name": "Soldier's Broadsword✨",
+              "weight": 15,
+              "requires": "Visit Depths"
+            }
+          ]
+        },
+        {
+          "kind": "GreatHit",
+          "count": "1",
+          "items": [
+            {
+              "name": "Princess Zelda Fabric",
+              "weight": 100,
+              "requires": ""
+            }
+          ]
+        }
+      ],
+      "sources": [
+        "datamine"
+      ],
+      "notes": [],
+      "special": []
+    }
+  ]
+}

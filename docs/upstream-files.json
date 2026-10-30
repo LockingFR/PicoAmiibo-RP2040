@@ -1,0 +1,99 @@
+{
+  "repository": "https://github.com/notsosaelin/PicoSwitch2",
+  "tag": "v2.5.0",
+  "commit": "cdb5bf6f85cef9998c11da280073a0c7642b712c",
+  "files": {
+    "src/vendor/virtual_amiibo.c": {
+      "upstream_path": "src/nfc/virtual_amiibo.c",
+      "sha256": "90af8a1f18e733663eaf44e87325904f58db7744f0d4b1b336f73592b81be077"
+    },
+    "include/virtual_amiibo.h": {
+      "upstream_path": "include/virtual_amiibo.h",
+      "sha256": "5dda66cc1dd612e98f8b7f2159e4844816588b246bac049dc318681b8c2ca3bd"
+    },
+    "tests/upstream/test_virtual_amiibo.c": {
+      "upstream_path": "tools/test_virtual_amiibo.c",
+      "sha256": "a590d0b476c5077584f635f1315e7d5cbf36095b0db3f75f059a4bb811bcc8e9"
+    },
+    "src/vendor/ns2_virtual_nfc.c": {
+      "upstream_path": "src/nfc/ns2_virtual_nfc.c",
+      "sha256": "ee9024f9d461898ea617a9fbc3d149f3178971ac9645a67b1b6067e150685453"
+    },
+    "include/ns2_virtual_nfc.h": {
+      "upstream_path": "include/ns2_virtual_nfc.h",
+      "sha256": "3ab7ae691861d516b9c8d1396742d84b5feaf70081684107300b4f774a57c112"
+    },
+    "tests/upstream/test_ns2_virtual_nfc.c": {
+      "upstream_path": "tools/test_ns2_virtual_nfc.c",
+      "sha256": "41f2b3772bb58b4b6367eec66e22c346fc2ee2216eac57c90566ecba0564ad73"
+    },
+    "src/vendor/ns2_virtual_nfc_runtime.c": {
+      "upstream_path": "src/nfc/ns2_virtual_nfc_runtime.c",
+      "sha256": "34b9b33953cafa9ac0d6dd6ae984a4a1f94863eb1a6aaf85eb4218466973dbbe"
+    },
+    "include/ns2_virtual_nfc_runtime.h": {
+      "upstream_path": "include/ns2_virtual_nfc_runtime.h",
+      "sha256": "a79137d97ebe9c92cc17b2db4a92a0448870eddd240fc2268ec7f48de568d0fc"
+    },
+    "tests/upstream/test_ns2_virtual_nfc_runtime.c": {
+      "upstream_path": "tools/test_ns2_virtual_nfc_runtime.c",
+      "sha256": "c75b9fbb0f1b8dc20921e1e260afd7702c97c0229e0a31072b67b433058de963"
+    },
+    "src/vendor/ns2_vendor_rx.c": {
+      "upstream_path": "src/switch_pro2/ns2_vendor_rx.c",
+      "sha256": "785e31c0498e1ab5f1cd64052102d5e69432c837eb19a7785eb4e5aee5800c21"
+    },
+    "include/ns2_vendor_rx.h": {
+      "upstream_path": "include/ns2_vendor_rx.h",
+      "sha256": "dc58b583be0f759ced6fb51952a5c48c38c0e9dd3125dab5e80ed2d5894e7b5e"
+    },
+    "tests/upstream/test_ns2_vendor_rx.c": {
+      "upstream_path": "tools/test_ns2_vendor_rx.c",
+      "sha256": "4c123ba2a526498c752a47565d49616055afcf36983382c13451a7037f0b6830"
+    },
+    "src/vendor/ns2_vendor_tx.c": {
+      "upstream_path": "src/switch_pro2/ns2_vendor_tx.c",
+      "sha256": "f7f522e6f60fccd0a7864e95dabc2b0174a907d088b0783d39de319dfd2f55ff"
+    },
+    "include/ns2_vendor_tx.h": {
+      "upstream_path": "include/ns2_vendor_tx.h",
+      "sha256": "1ca85c5e7b221a0d9dbb1f46634528d0ae24801509bad4c81ad5337a286a631e"
+    },
+    "tests/upstream/test_ns2_vendor_tx.c": {
+      "upstream_path": "tools/test_ns2_vendor_tx.c",
+      "sha256": "df7a0f17b50eba62da039da065975b41bb46fde0bba69d1fa87ade23ebdf071a"
+    },
+    "src/vendor/ns2_pairing_crypto.c": {
+      "upstream_path": "src/ns2_pairing_crypto.c",
+      "sha256": "94144312f1ddc5a60c373ddf2af3c70e7e0199ae589fddee9b8ddb3ad4b3836b"
+    },
+    "include/ns2_pairing_crypto.h": {
+      "upstream_path": "include/ns2_pairing_crypto.h",
+      "sha256": "22822dd9baa958737da6ab281111a73a58e8fa0ee7edede67c48ab6e6211b8d0"
+    },
+    "tests/upstream/test_ns2_pairing_crypto.c": {
+      "upstream_path": "tools/test_ns2_pairing_crypto.c",
+      "sha256": "e075583ce22f52a03dd9c7db5fd990e3bb2b27e38c8689eb49915e6ee1fda96f"
+    },
+    "src/vendor/ns2_firmware_profile.c": {
+      "upstream_path": "src/ns2_firmware_profile.c",
+      "sha256": "9707457ffacfa0e2a806e00d36a1f04d7f5224cc8b1b9913675b5e4f92a9d753"
+    },
+    "include/ns2_firmware_profile.h": {
+      "upstream_path": "include/ns2_firmware_profile.h",
+      "sha256": "c64559ef8a9d15a4cc071d168836af1ef6c66dea6e8cb2a065d76275b440d98c"
+    },
+    "tests/upstream/test_ns2_firmware_profile.c": {
+      "upstream_path": "tools/test_ns2_firmware_profile.c",
+      "sha256": "f2a2d639616fdefa28c3b05209d087a4fc34e5c3be239a8f7c0fedb7ee05174c"
+    },
+    "LICENSE": {
+      "upstream_path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "pico_sdk_import.cmake": {
+      "upstream_path": "pico_sdk_import.cmake",
+      "sha256": "8487a38ed07af12cd8908fd6766bf0e045896fc60f855e8d06ace3b93abfc514"
+    }
+  }
+}

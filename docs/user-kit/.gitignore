@@ -1,0 +1,13 @@
+upstream/
+build/
+build-*/
+*.uf2
+*.elf
+*.bin
+*.map
+*.hex
+*.amiibo
+*.bin.amiibo
+amiibo-private/
+private/
+*.log
