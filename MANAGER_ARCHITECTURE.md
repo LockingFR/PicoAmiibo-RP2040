@@ -96,7 +96,7 @@ and access buttons. Reward data never changes the transfer or game outcome.
 
 ## Validation boundaries
 
-The suite has 54 Manager/loader Python tests, including Qt interactions. The
-firmware suite rebuilds 11 C executables and runs its 13 historical Python tests.
+The suite has 67 Manager/loader Python tests, including Qt interactions. The
+firmware suite rebuilds 14 C executables and runs its 13 historical Python tests.
 EXE smoke testing is real Windows execution with synthetic data and USB disabled.
 These are not console tests. See STATUS.md for actual hardware observations.

@@ -128,7 +128,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/test.ps1
 The Manager build uses a private virtual environment, pinned dependencies, a
 clean Git revision, and a required smoke result bound to the exact EXE SHA256.
 The smoke test uses an isolated artificial profile with USB disabled and renders
-six views. Archive timestamps mean byte-for-byte ZIP reproducibility is not promised.
+14 EN/FR views, including checked playlists. Archive timestamps mean byte-for-byte
+ZIP reproducibility is not promised. Preview outputs are separate from stable builds.
 
 The source archive supports review and `python -m manager` with the pinned
 requirements. A fresh source checkout can build the application without local

@@ -18,8 +18,16 @@ M7 Manager 1.2.0-preview.1 adds persistent EN/FR choice, checked queue,
 card-to-Load navigation and complete per-tag readback. 67 Python/Qt tests PASS.
 Source smoke renders 14 EN/FR views with artificial data and USB disabled;
 French playlist and rewards screenshots visually inspected. Final EXE validation
-is pending. Test screenshots wait for Qt layout updates before capture.
+PASS on the preliminary EXE (14 views). Final layout polish keeps the batch Load
+button above the cards and gives the series filter room in French; rebuild it.
+Test screenshots wait for Qt layout updates before capture.
 New outputs use dist/preview and artifacts/manager-preview, preserving 1.1.1.
+
+Firmware delivery at artifacts/prototype-p3-multislot is from clean c79e272:
+49,168 flash bytes, 57,028 SRAM bytes including stack/heap reservations; no
+radio/dynamic-allocation symbols; empty UF2 SHA256
+4b2a389100a20b41d79b869c1225a30be2047e5fb7f9095d0d4d70ec478a4cb4.
+Firmware and its source commit are independent of later UI/documentation polish.
 
 No automatic flashing, real device writes, Switch operation, or private profile
 changes in this extension. Firmware 0.2.0 hardware qualification is UNTESTED.

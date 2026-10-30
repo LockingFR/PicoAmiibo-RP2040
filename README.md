@@ -131,7 +131,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/build_manager.ps1
 
 The script creates `.deps/manager-env`, installs pinned dependencies, builds a
 Windows x64 executable, runs tests and an isolated EXE smoke test, then packages
-the portable ZIP in `artifacts/manager-v1`. It never flashes hardware. Recovery
+the portable ZIP in `artifacts/manager-preview` and executable in
+`dist/preview/PicoAmiibo-Manager`. It never flashes hardware. Recovery
 UF2 copies are optional when rebuilding from a fresh clone; see `firmware/README.md`.
 
 For source development:
@@ -144,12 +145,12 @@ python -m venv .deps/manager-env
 
 ## Build the firmware
 
-The checked-in firmware source is **0.1.2**. Install an ARM GCC toolchain,
+This branch's firmware source is **0.2.0**. Install an ARM GCC toolchain,
 then run:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools/setup.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/build.ps1 -BuildDirectory build/pico-p2
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/build.ps1 -BuildDirectory build/pico-playlist-preview
 ```
 
 `tools/build.ps1` defaults to an existing devkitARM installation. Use
@@ -157,7 +158,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/build.ps1 -BuildDirect
 Pinned dependencies include Pico SDK 2.2.0, CMake 3.31.6, and Ninja 1.12.1.
 See [provenance](docs/PROVENANCE.md) for exact revisions.
 
-The resulting `build/pico-p2/PicoAmiibo-RP2040-pico-empty.uf2` must be installed
+The resulting `build/pico-playlist-preview/PicoAmiibo-RP2040-pico-empty.uf2` must be installed
 manually on the correct RPI-RP2 drive. Do not replace working firmware merely to
 update the Manager.
 
@@ -172,10 +173,11 @@ Manager coverage includes invalid files, persistent library/preferences, duplica
 detection, wrong devices, partial I/O, disconnection, write refusal, corrupted
 readback, cancellation, Qt interactions, and reward identities.
 
-The firmware suite rebuilds **11 C executables** under WSL Ubuntu-24.04 with
+The firmware suite rebuilds **14 C executables** under WSL Ubuntu-24.04 with
 ASan/UBSan and runs **13 Python tests**. It includes **5,120 simulated flash
 interruptions** and **20,000 malformed USB packets**. The combined Manager/Python
-suite currently contains **54 tests**. Host tests and simulated flash behavior
+suite currently contains **67 tests**. The frozen EXE smoke captures 14 EN/FR
+views with USB disabled. Host tests and simulated flash behavior
 are separate from real Pico/Switch 2 evidence.
 
 ## Limitations
