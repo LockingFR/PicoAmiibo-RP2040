@@ -1,5 +1,19 @@
 # Project status — 30 October 2026
 
+## Active experimental extension
+
+Branch feature/bilingual-playlist: firmware 0.2.0 and Manager 1.2.0-preview.1.
+The user requested French/English selection, checked multi-tag loading, a
+five-second next-tag hold with wrap, later single-tag replacement and direct
+card-to-Load navigation. See docs/PLAYLIST_V2.md for the new gesture/storage
+contract and physical test plan. This supersedes the earlier multi-slot scope
+exclusion below; the following sections describe the preserved baseline.
+
+M6 host PASS: 14 rebuilt C executables (ASan/UBSan), 13 Python tests; playlist
+power-cut, parser, and cycle behavior are host simulations. Preliminary ARM
+compile PASS. Final clean-revision memory audit, EXE packaging and physical
+qualification remain pending. The installed working firmware is unchanged.
+
 ## English Manager 1.1.1
 
 English application, guide, errors, reward summaries, and maintained documentation.

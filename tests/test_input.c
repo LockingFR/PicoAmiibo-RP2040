@@ -9,7 +9,7 @@ typedef struct {
     pa_device_t device;
     uint32_t now;
     bool config;
-    unsigned tag_events, config_events, a_ms;
+    unsigned tag_events, config_events, next_events, a_ms;
 } fixture_t;
 
 static void init(fixture_t *f) {
@@ -27,6 +27,7 @@ static void step(fixture_t *f,bool raw) {
     assert(!(a.buttons[0]&0x10) && !(a.buttons[1]&0x10));
     if(a.toggle_tag) {++f->tag_events;pa_device_present(&f->device,!f->device.presented);}
     if(a.toggle_config) {++f->config_events;f->config=!f->config;}
+    if(a.next_slot) {++f->next_events;assert(!a.toggle_config && !a.toggle_tag);}
     if(a.buttons[0]&2) {
         ++f->a_ms;
         uint8_t report[63];pa_device_report(&f->device,f->now,a.buttons,report);
@@ -65,8 +66,16 @@ int main(void) {
         assert(!f.a_ms && !f.tag_events && !f.config_events);
     }
 
-    init(&f);run(&f,true,5000);run(&f,false,600);
-    assert(f.config_events==1 && f.config && !f.a_ms && !f.tag_events);
+    init(&f);run(&f,true,2500);
+    assert(f.config_events==0 && !f.next_events);
+    run(&f,false,600);
+    assert(f.config_events==1 && f.config && !f.a_ms && !f.tag_events && !f.next_events);
+
+    init(&f);run(&f,true,5200);
+    assert(f.next_events==1 && !f.config_events && !f.config);
+    run(&f,true,12000);run(&f,false,600);
+    assert(f.next_events==1 && !f.a_ms && !f.tag_events && !f.config_events);
+    run(&f,true,5200);run(&f,false,600);assert(f.next_events==2);
 
     init(&f);f.config=true;double_tap(&f);run(&f,true,1000);run(&f,false,700);
     assert(!f.a_ms && !f.tag_events && !f.config_events);
@@ -94,6 +103,6 @@ int main(void) {
     init(&f);run(&f,true,100);run(&f,false,100);f.config=true;run(&f,false,700);
     f.config=false;run(&f,false,700);assert(!f.tag_events && !f.a_ms);
 
-    puts("PASS BOOTSEL input: no synthetic L/R; double-tap A reaches HID then releases; single-tag toggle, ignored medium holds, config, bounce, deadline, mode cancellation, clock wrap");
+    puts("PASS BOOTSEL input: single/double, 2s release config, one 5s next-slot per hold, no premature CDC, bounce, cancellation, clock wrap");
     return 0;
 }

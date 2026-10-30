@@ -9,6 +9,8 @@
 #include "pa_identity.h"
 #include "pa_config.h"
 #include "pa_input.h"
+#include "pa_playlist.h"
+#include "pa_cycle.h"
 #include "ns2_vendor_rx.h"
 #include "ns2_vendor_tx.h"
 
@@ -25,6 +27,9 @@ static pa_store_t store;
 static pa_config_t config;
 static bool config_mode;
 static pa_input_t input;
+static pa_playlist_t playlist;
+static pa_cycle_t cycle;
+static uint32_t slot_feedback_at;
 
 static const tusb_desc_device_t config_device={
     .bLength=18,.bDescriptorType=TUSB_DESC_DEVICE,.bcdUSB=0x0200,
@@ -41,30 +46,36 @@ static bool erase_bank(void *context,unsigned bank) {
     (void)context;
     if(bank>1) return false;
     uint32_t flags=save_and_disable_interrupts();
-    flash_range_erase(PA_FLASH_BANK0+bank*PA_BANK_SIZE,PA_BANK_SIZE);
+    flash_range_erase(PA_PLAYLIST_FLASH_BANK0+bank*PA_PLAYLIST_BANK_SIZE,PA_PLAYLIST_BANK_SIZE);
     restore_interrupts(flags);
     return true;
 }
 static bool program_page(void *context,unsigned bank,size_t offset,const uint8_t page[256]) {
     (void)context;
-    if(bank>1 || offset%256 || offset+256>PA_BANK_SIZE) return false;
+    if(bank>1 || offset%256 || offset+256>PA_PLAYLIST_BANK_SIZE) return false;
     uint32_t flags=save_and_disable_interrupts();
-    flash_range_program(PA_FLASH_BANK0+bank*PA_BANK_SIZE+(uint32_t)offset,page,256);
+    flash_range_program(PA_PLAYLIST_FLASH_BANK0+bank*PA_PLAYLIST_BANK_SIZE+(uint32_t)offset,page,256);
     restore_interrupts(flags);
     return true;
 }
 static bool save_tag(void *context,const uint8_t *data,size_t size) {
     (void)context;
-    return pa_store_save(&store,data,size,erase_bank,program_page,NULL);
+    return pa_playlist_save_single(&playlist,data,size,erase_bank,program_page,NULL);
+}
+static bool save_list(void *context,const uint8_t *slots,unsigned count) {
+    (void)context;
+    return pa_playlist_save(&playlist,slots,count,erase_bank,program_page,NULL);
 }
 static void set_config_mode(bool next) {
     tud_disconnect();
     sleep_ms(100);
     config_mode=next;
+    cycle.pending=false;
     mounted=false;
     pa_device_present(&device,false);
     pa_identity_init(); ns2_vendor_rx_init(&rx); ns2_vendor_tx_init(&tx);
     pa_config_init(&config,&device,&store,save_tag,NULL);
+    pa_config_set_playlist(&config,&playlist,save_list);
     tud_connect();
 }
 
@@ -93,7 +104,8 @@ static bool input_buttons(uint32_t now, uint8_t buttons[3]) {
     }
     pa_input_actions_t actions;
     pa_input_step(&input,now,raw_pressed,config_mode,&actions);
-    if(actions.toggle_tag) pa_device_present(&device,!device.presented);
+    if(actions.toggle_tag && !cycle.pending) pa_device_present(&device,!device.presented);
+    if(actions.next_slot && !config_mode) pa_cycle_request(&cycle,&playlist,&device,now);
     memcpy(buttons,actions.buttons,3);
     // Optional dry contacts to GND. Original Pico GPIOs only, internal pullups.
     if (!gpio_get(2)) buttons[0] |= 0x02; // A
@@ -212,9 +224,12 @@ int main(void) {
     pa_input_init(&input);
     pa_store_init(&store,(const uint8_t *)(XIP_BASE+PA_FLASH_BANK0),
         (const uint8_t *)(XIP_BASE+PA_FLASH_BANK0+PA_BANK_SIZE));
-    const uint8_t *slot=pa_store_slot(&store);
+    pa_playlist_init(&playlist,(const uint8_t *)(XIP_BASE+PA_PLAYLIST_FLASH_BANK0),
+        (const uint8_t *)(XIP_BASE+PA_PLAYLIST_FLASH_BANK0+PA_PLAYLIST_BANK_SIZE));
+    const uint8_t *slot=playlist.count ? pa_playlist_slot(&playlist,0) : pa_store_slot(&store);
     pa_slot_load(&device,slot ? slot : pa_preload,PA_SLOT_SIZE);
     pa_config_init(&config,&device,&store,save_tag,NULL);
+    pa_config_set_playlist(&config,&playlist,save_list);
     ns2_vendor_rx_init(&rx); ns2_vendor_tx_init(&tx);
     tusb_init();
     for (;;) {
@@ -236,6 +251,9 @@ int main(void) {
             if (tud_vendor_read(&byte, 1) != 1) break;
             ns2_vendor_rx_feed(&rx, &byte, 1, command, NULL);
         }
+        /* Allow a visible removal interval, drain old replies and never auto-present the next tag. */
+        if(pa_cycle_tick(&cycle,&playlist,&device,now,ns2_vendor_tx_active(&tx),ns2_vendor_rx_pending(&rx)))
+            slot_feedback_at=now;
         if (mounted && pa_identity_streaming() && (uint32_t)(now-last_report_ms)>=1 && tud_hid_ready()) {
             uint8_t report[63];
             // The console selects 0x09. Do not mislabel its layout as 0x05.
@@ -253,6 +271,8 @@ int main(void) {
         static uint32_t seen_nfc,last_nfc;
         if(device.nfc_commands!=seen_nfc) {seen_nfc=device.nfc_commands;last_nfc=now;}
         if(seen_nfc && (uint32_t)(now-last_nfc)<80)led=false;
+        if(slot_feedback_at && (uint32_t)(now-slot_feedback_at)<600)
+            led=((now-slot_feedback_at)/150)%2==0;
         gpio_put(PICO_DEFAULT_LED_PIN, led);
     }
 }

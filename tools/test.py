@@ -17,7 +17,7 @@ for test in TESTS:
     cmd=[cc,"-std=c11","-Wall","-Wextra","-Werror","-g","-O1","-Iinclude"]
     if os.name != "nt":
         cmd += ["-fsanitize=address,undefined","-fno-omit-frame-pointer","-fno-pie","-no-pie"]
-    cmd += [str(test),"src/device.c","src/identity.c","src/store.c","src/config.c","src/input.c",*map(str,VENDOR),"-o",str(exe)]
+    cmd += [str(test),"src/device.c","src/identity.c","src/store.c","src/playlist.c","src/cycle.c","src/config.c","src/input.c",*map(str,VENDOR),"-o",str(exe)]
     subprocess.run(cmd,check=True)
     subprocess.run([str(exe)],check=True)
 suite=unittest.defaultTestLoader.discover("tests",pattern="test_*.py")

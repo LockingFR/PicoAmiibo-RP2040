@@ -1,5 +1,29 @@
 # Development handoff — PicoAmiibo-RP2040
 
+## Active preview: feature/bilingual-playlist
+
+User-authorized extension after 1.1.1. Read docs/PLAYLIST_V2.md first.
+Firmware 0.2.0 adds 64 transactional slots, CAPS/BATCH/indexed READ, legacy LOAD
+replacing the list with one tag, and one advance per five-second BOOTSEL hold.
+Release a two-to-less-than-five-second hold to enter configuration. Cycling
+removes the old tag, waits one second and drains USB before loading the next,
+still ejected. Runtime index is RAM-only and resets to first on boot.
+
+M6 host PASS: tools/test.ps1 rebuilt 14 C executables with ASan/UBSan and ran
+13 Python tests. Includes power-cut simulation, strict protocol bounds, and
+cycle removal/drain/wrap/signature/counter tests. Preliminary ARM build PASS
+for non-wireless pico; final clean-revision build/package still pending.
+
+Manager 1.2.0-preview.1 development adds persistent EN/FR choice, checked queue,
+card-to-Load navigation and complete per-tag readback. 67 Python/Qt tests passed
+before the final packaging/localization edits; final EXE validation is pending.
+New outputs use dist/preview and artifacts/manager-preview, preserving 1.1.1.
+
+No automatic flashing, real device writes, Switch operation, or private profile
+changes in this extension. Firmware 0.2.0 hardware qualification is UNTESTED.
+
+## Historical baseline (1.1.1, preserved)
+
 Current desktop release: **Manager 1.1.1**, English. Current firmware source:
 **0.1.2**, real non-W Pico. The working 0.1.1 delivery remains preserved separately.
 

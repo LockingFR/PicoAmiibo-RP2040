@@ -67,7 +67,8 @@ def main():
         "tinyusb":"86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
         "compiler":command(str(args.toolchain/"bin/arm-none-eabi-gcc.exe"),"--version").splitlines()[0],
         "flash_firmware_bytes":len(binary),"sram_linked_including_heap_and_stack_reservations":allocated_sram,
-        "reserved_tag_flash_bytes":8192,"source_tree":"clean","radio_symbols":"absent",
+        "reserved_tag_flash_bytes":8192+2*65536,"preserved_legacy_flash_bytes":8192,
+        "playlist_bank_bytes":65536,"playlist_max_slots":64,"source_tree":"clean","radio_symbols":"absent",
         "dynamic_allocation_symbols":"absent","console_hardware":"UNTESTED","files":files}
     (args.output/"manifest.json").write_text(json.dumps(manifest,indent=2)+"\n",encoding="utf-8")
     (args.output/"sizes.txt").write_text(sizes+"\n",encoding="utf-8")

@@ -14,7 +14,7 @@ SLOT_SIZE = 608
 EMPTY_SLOT = MAGIC + bytes(SLOT_SIZE - len(MAGIC))
 FAMILY = 0xE48BFF56
 BASE = 0x10000000
-LIMIT = BASE + 2 * 1024 * 1024 - 8192  # last two sectors belong to atomic tag store
+LIMIT = BASE + 2 * 1024 * 1024 - 8192 - 2 * 65536  # preserve playlist and legacy stores
 HEADER = (0x0A324655, 0x9E5D5157)
 
 def pack(binary):

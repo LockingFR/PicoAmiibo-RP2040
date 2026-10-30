@@ -5,11 +5,11 @@ if(NOT PICO_BOARD STREQUAL "pico")
 endif()
 set(PICO_NO_PICOTOOL 1)
 include(pico_sdk_import.cmake)
-project(PicoAmiiboRP2040 VERSION 0.1.2 LANGUAGES C CXX ASM)
+project(PicoAmiiboRP2040 VERSION 0.2.0 LANGUAGES C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 pico_sdk_init()
 add_executable(picoamiibo
-    src/main.c src/device.c src/identity.c src/store.c src/config.c src/input.c
+    src/main.c src/device.c src/identity.c src/store.c src/playlist.c src/cycle.c src/config.c src/input.c
     src/vendor/virtual_amiibo.c src/vendor/ns2_virtual_nfc.c
     src/vendor/ns2_virtual_nfc_runtime.c src/vendor/ns2_vendor_rx.c
     src/vendor/ns2_vendor_tx.c src/vendor/ns2_pairing_crypto.c

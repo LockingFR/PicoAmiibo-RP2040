@@ -38,7 +38,9 @@ void pa_input_step(pa_input_t *s, uint32_t now, bool raw, bool config,
             s->hold_handled = false;
         } else if (!s->hold_handled) {
             uint32_t held = now - s->pressed_since;
-            if (held >= PA_INPUT_CONFIG_HOLD_MS) {
+            if (!config && held >= PA_INPUT_NEXT_HOLD_MS) {
+                out->next_slot = true;
+            } else if (held >= PA_INPUT_CONFIG_HOLD_MS) {
                 out->toggle_config = true;
             } else if (held < PA_INPUT_TAP_MAX_MS) {
                 if (s->second_tap) {
@@ -55,15 +57,19 @@ void pa_input_step(pa_input_t *s, uint32_t now, bool raw, bool config,
         }
     }
     if (s->pressed && !s->hold_handled &&
-        (uint32_t)(now - s->pressed_since) >= PA_INPUT_CONFIG_HOLD_MS) {
+        (uint32_t)(now - s->pressed_since) >= (config ? PA_INPUT_CONFIG_HOLD_MS : PA_INPUT_NEXT_HOLD_MS)) {
         s->hold_handled = true;
-        out->toggle_config = true;
+        if(config)out->toggle_config = true;
+        else out->next_slot = true;
     }
     if (out->toggle_config) {
         s->tap_pending = false;
         s->second_tap = false;
         s->a_active = false;
         out->toggle_tag = false;
+    }
+    if (out->next_slot) {
+        s->tap_pending=false;s->second_tap=false;s->a_active=false;out->toggle_tag=false;
     }
     if (!config) {
         if (s->a_active) out->buttons[0] |= 0x02; // report 0x09 A
