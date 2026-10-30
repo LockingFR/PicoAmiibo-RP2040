@@ -1,5 +1,16 @@
 # PicoAmiibo Manager changelog
 
+## 1.2.0-preview.1 — 30 October 2026
+
+- Persistent French/English choice with immediate in-window translation.
+- Card body opens Load; checkboxes queue an ordered selection without navigating.
+- Checked playlists up to 64 tags, capability negotiation and byte-for-byte
+  readback of every tag. Older firmware remains compatible with single loads.
+- Firmware 0.2.0 adds separate transactional playlist banks, five-second cycling,
+  wrap, boot-to-first and single LOAD replacing the playlist. Old tag banks remain.
+- Separate preview output, bilingual EXE smoke and reproducible physical test plan.
+- Hardware qualification of the new firmware remains UNTESTED.
+
 ## 1.1.1 — 30 October 2026
 
 - Complete English labels for the history Game column and USB configuration state.

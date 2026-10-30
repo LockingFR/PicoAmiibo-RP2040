@@ -33,10 +33,12 @@ def read_exact(port,size,timeout=8,on_progress=None):
         elif time.monotonic()>deadline: raise RuntimeError("Serial read timed out")
     return bytes(result)
 
-def line(port):
-    result=bytearray()
+def line(port,timeout=8):
+    result=bytearray();deadline=time.monotonic()+timeout
     while len(result)<256:
-        byte=read_exact(port,1)
+        remaining=deadline-time.monotonic()
+        if remaining<=0:raise RuntimeError("Serial read timed out")
+        byte=read_exact(port,1,timeout=remaining)
         if byte==b"\n": return result.decode("ascii").rstrip("\r")
         result+=byte
     raise RuntimeError("Oversized device response")

@@ -1,14 +1,31 @@
 from PySide6.QtCore import Qt,Signal
 from PySide6.QtGui import QColor,QPainter,QPen,QPixmap,QFont
-from PySide6.QtWidgets import QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,QToolButton
+from PySide6.QtWidgets import QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,QToolButton,QCheckBox,QMessageBox as QtMessageBox
+from manager.i18n import t
+
+class TranslatedLabel(QLabel):
+    def __init__(self,text):self.source_text=str(text);super().__init__(t(text))
+    def setText(self,text):self.source_text=str(text);super().setText(t(text))
+    def retranslate(self):super().setText(t(self.source_text))
+
+class TranslatedButton(QPushButton):
+    def __init__(self,text):self.source_text=str(text);super().__init__(t(text))
+    def setText(self,text):self.source_text=str(text);super().setText(t(text))
+    def retranslate(self):super().setText(t(self.source_text))
+
+class Messages:
+    @staticmethod
+    def information(parent,title,text):return QtMessageBox.information(parent,t(title),t(text))
+    @staticmethod
+    def warning(parent,title,text):return QtMessageBox.warning(parent,t(title),t(text))
 
 def label(text,style="",wrap=False):
-    w=QLabel(text);w.setWordWrap(wrap)
+    w=TranslatedLabel(text);w.setWordWrap(wrap)
     if style:w.setObjectName(style)
     return w
 
 def button(text,slot=None,primary=False):
-    w=QPushButton(text);w.setCursor(Qt.CursorShape.PointingHandCursor)
+    w=TranslatedButton(text);w.setCursor(Qt.CursorShape.PointingHandCursor)
     if primary:w.setObjectName("primary")
     if slot:w.clicked.connect(slot)
     return w
@@ -32,14 +49,16 @@ def artwork(series="",size=200):
     return pm
 
 class TagCard(QFrame):
-    selected=Signal(str);favorite=Signal(str,bool)
-    def __init__(self,tag,meta,image=None):
+    selected=Signal(str);favorite=Signal(str,bool);queued=Signal(str,bool)
+    def __init__(self,tag,meta,image=None,checked=False):
         super().__init__();self.tag=tag;self.setObjectName("tagCard");self.setMinimumWidth(215);self.setMaximumWidth(380)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         layout=QVBoxLayout(self);layout.setContentsMargins(16,12,16,16);layout.setSpacing(8)
-        top=QHBoxLayout();top.addWidget(label(meta['series'],"eyebrow"));top.addStretch()
+        top=QHBoxLayout();self.check=QCheckBox();self.check.setToolTip(t("Check for playlist"));self.check.setChecked(checked)
+        self.check.toggled.connect(lambda value:self.queued.emit(tag['sha256'],value));top.addWidget(self.check)
+        top.addWidget(label(meta['series'],"eyebrow"));top.addStretch()
         fav=QToolButton();fav.setText("★" if tag['favorite'] else "☆");fav.setCheckable(True);fav.setChecked(bool(tag['favorite']))
-        fav.setToolTip("Remove from favorites" if tag['favorite'] else "Add to favorites")
+        fav.setToolTip(t("Remove from favorites" if tag['favorite'] else "Add to favorites"))
         fav.clicked.connect(lambda value:self.favorite.emit(tag['sha256'],value));top.addWidget(fav);layout.addLayout(top)
         art=QLabel();art.setAlignment(Qt.AlignmentFlag.AlignCenter);art.setFixedHeight(145)
         pix=QPixmap(str(image)) if image else artwork(meta['series'])
@@ -47,7 +66,7 @@ class TagCard(QFrame):
         name=label(meta['name'],"cardTitle",True);name.setMinimumHeight(42);layout.addWidget(name)
         if meta.get('reward'):layout.addWidget(label('Possible TOTK rewards · '+meta['reward'],'muted',True))
         layout.addWidget(label(f"{tag['size']} bytes · Format verified","muted"))
-        self.setToolTip("Format and BCC verified. Amiibo authenticity must be tested in the game.")
+        self.setToolTip(t("Format and BCC verified. Amiibo authenticity must be tested in the game."))
     def mouseReleaseEvent(self,event):
         if event.button()==Qt.MouseButton.LeftButton:self.selected.emit(self.tag['sha256'])
         super().mouseReleaseEvent(event)

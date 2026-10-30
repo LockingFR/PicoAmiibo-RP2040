@@ -11,8 +11,9 @@ exclusion below; the following sections describe the preserved baseline.
 
 M6 host PASS: 14 rebuilt C executables (ASan/UBSan), 13 Python tests; playlist
 power-cut, parser, and cycle behavior are host simulations. Preliminary ARM
-compile PASS. Final clean-revision memory audit, EXE packaging and physical
-qualification remain pending. The installed working firmware is unchanged.
+compile PASS. M7: 67 Python/Qt tests PASS and source smoke renders 14 EN/FR
+views with USB disabled. Final clean-revision memory audit, EXE packaging and
+physical qualification remain pending. The installed working firmware is unchanged.
 
 ## English Manager 1.1.1
 

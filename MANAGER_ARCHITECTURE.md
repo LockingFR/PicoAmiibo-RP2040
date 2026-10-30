@@ -1,7 +1,16 @@
 # PicoAmiibo Manager — implementation architecture
 
-The desktop application reuses the existing single-tag firmware and wire protocol.
-The English 1.1.1 release changes presentation/catalog data, not the C firmware.
+The 1.2.0 preview retains the existing single-tag transport and explicitly
+negotiates the 0.2.0 playlist extension. Stable 1.1.1 remains unchanged on main.
+See docs/PLAYLIST_V2.md for storage, button timing and hardware test boundaries.
+
+The Manager stores ordered checked SHA256 identifiers and the en/fr preference
+in its existing private settings. Translation applies only at presentation.
+Clicking a card opens the single-tag Load page; checkbox signals only edit the
+queue. A worker snapshots and validates every selected file before opening CDC.
+CAPS must advertise support before BATCH. Every indexed READ is compared with
+the corresponding source; final INFO checks first-tag identity/count/index.
+Success is never inferred from the transmit bar. Legacy LOAD remains available.
 
 ## Preserved foundation
 

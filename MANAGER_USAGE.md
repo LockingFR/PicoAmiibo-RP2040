@@ -1,4 +1,32 @@
-# PicoAmiibo Manager 1.1.1 — Windows guide
+# PicoAmiibo Manager 1.2.0-preview.1 — Windows guide
+
+## Languages and checked playlists
+
+Choose **Diagnostics → Preferences and local data → Language → English/Français**.
+The window changes immediately and remembers the setting. This changes displayed
+text, not private files or protocol bytes.
+
+Click an amiibo card body to go straight to **Load** with that tag selected.
+Click its checkbox to queue it without changing pages. **Select all shown** checks
+the current filtered results; **Clear checked** empties the queue. The Load page
+lists the queue in checking order, up to 64 tags; nothing is silently truncated.
+Click **Load checked tags**, confirm the Pico, then **Load checked playlist**.
+Every tag is read back and compared. Cancelling after flash commit can leave the
+new list stored but not verified; reconnect and inspect it before retrying.
+
+Multiple tags require firmware **0.2.0**. Older firmware supports a single tag
+and the app blocks a multi-tag transfer. The app never flashes firmware.
+The separate 0.2.0 preview requires physical qualification; see
+[the physical test plan](docs/PLAYLIST_V2.md).
+
+On 0.2.0: short tap presents/removes; double tap sends A. Hold BOOTSEL for about
+five seconds to advance **once**, release, then allow about one second for the
+removal interval/USB drain and two confirmation LED pulses. Short-tap to present
+the new tag. Repeat to wrap to the first. Boot always selects the first, ejected.
+To enter PC configuration, release after two seconds but **before five**.
+
+To restore one tag, click its card or choose **Single amiibo (replace playlist)**,
+then load and verify it. That operation replaces the whole new-firmware list.
 
 ## Open the portable application
 
@@ -19,7 +47,7 @@ moving the application folder does not overwrite that private profile.
    connecting power instead opens the RPI-RP2 recovery drive.
 3. Choose **Library → Import** and select your raw 540/572-byte amiibo files.
    Duplicates are skipped. An unidentified file can still be loaded.
-4. Select a card, choose **Load selection**, and confirm the correct COM port.
+4. Click a card to open **Load** directly, and confirm the correct COM port.
    Multiple Pico devices require an explicit selection.
 5. Click **Load and verify**. Wait for **Saved and verified on the Pico**.
    The loader confirms commit, reads back every byte, compares it, and checks

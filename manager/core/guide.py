@@ -3,7 +3,13 @@ def instructions(version):
           "Disconnect the Pico from the PC. It cannot be connected to two USB hosts.",
           "Connect it to your Switch 2 dock using a USB data cable.",
           "Open your game, enable its amiibo feature, and start scanning."]
-    if version in ("0.1.1","0.1.2"):
+    if version=="0.2.0":
+        base += ["If the console asks for A, quickly tap BOOTSEL twice.",
+                 "While the game waits for a scan, briefly tap BOOTSEL once and wait about half a second.",
+                 "Hold BOOTSEL for five seconds to select the next tag, wrapping to the first. The new tag stays ejected.",
+                 "The LED confirms a change, not a tag name.",
+                 "Release a 2-to-5-second hold to enter configuration."]
+    elif version in ("0.1.1","0.1.2"):
         base += ["If the console asks for A, quickly tap BOOTSEL twice.",
                  "While the game waits for a scan, briefly tap BOOTSEL once and wait about half a second.",
                  "Another short tap removes the tag. A two-second hold opens PC configuration."]

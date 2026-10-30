@@ -1,7 +1,21 @@
 # Standalone technical review — PicoAmiibo Manager
 
 This document describes the maintained implementation and evidence as of
-30 October 2026. Current English desktop version: 1.1.1.
+30 October 2026. Current experimental desktop: 1.2.0-preview.1 (English/French).
+
+The new feature branch adds 64 transactional slots in two new 64 KiB banks,
+preserves the old two 4 KiB tag sectors, and negotiates CAPS/BATCH/indexed READ.
+Single LOAD replaces the new playlist. BOOTSEL holds of at least five seconds
+advance once with wrap; release a two-to-less-than-five-second hold for CDC.
+New-tag activation first removes the previous tag, waits a second and drains old
+USB messages. The next tag stays ejected. Runtime index resets to zero on boot.
+
+The bilingual Manager persists checked order and language, opens Load on card
+click, and verifies all selected tags byte for byte. Host tests simulate flash
+interruptions and USB transport; these are not console qualification. No real
+device writes or physical 0.2.0 Switch 2 test have been performed for this branch.
+See docs/PLAYLIST_V2.md for the concrete user-operated test and rollback plan.
+The baseline description below describes stable 1.1.1 and earlier firmware.
 
 ## Existing firmware
 

@@ -12,6 +12,12 @@ reproducible host tests. It does not modify the console, game, or save files.
 
 ## Current status
 
+**Experimental branch:** Manager **1.2.0-preview.1** adds persistent English/French
+selection, checkbox playlists and direct card-to-Load navigation. Firmware
+**0.2.0** adds up to 64 stored tags and five-second next-tag cycling. The new
+firmware requires separate, user-operated Pico/Switch 2 qualification. Keep the
+working release available. See [preview instructions and physical test plan](docs/PLAYLIST_V2.md).
+
 - **Real Switch 2 result:** the user reported obtaining **Epona in Tears of the
   Kingdom** after the firmware 0.1.1 delivery. This is a specific functional
   observation, not a claim that every game or amiibo has been qualified.
@@ -23,8 +29,8 @@ reproducible host tests. It does not modify the console, game, or save files.
 - **Firmware 0.1.2:** removes the BOOTSEL L+R gesture. It builds and passes host
   tests, but its real-console qualification is still pending.
 
-Keep a working 0.1.1 installation when trying the Manager. Updating the desktop
-application does not require flashing new firmware.
+Single-tag loading still works with 0.1.1/0.1.2. Multiple stored tags require a
+deliberate manual installation of the separately labeled 0.2.0 preview UF2.
 
 ## Download
 
@@ -62,7 +68,11 @@ For full instructions and recovery, see [Manager usage](MANAGER_USAGE.md) and
 
 ## Windows Manager
 
-- English dark interface with Home, Library, Load, Switch 2 guide, and Diagnostics.
+- English/French dark interface; choose **Diagnostics → Language**. Choice persists.
+- Card body opens Load directly. Checkbox only queues the card for a playlist.
+- **Load checked tags** displays ordered selections; **Single amiibo (replace
+  playlist)** replaces them with one tag on the new firmware. Every tag is read
+  back and compared before success. Older firmware remains single-tag only.
 - Persistent local library, SHA256 duplicate detection, favorites, and search.
 - USB/COM discovery with explicit selection when multiple Pico devices are present.
 - Real transfer/readback progress, cancellation, clear errors, and transfer history.

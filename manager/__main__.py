@@ -8,6 +8,7 @@ from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication,QMessageBox
 from manager.core.library import Library
 from manager.app.window import MainWindow
+from manager.i18n import t
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description="PicoAmiibo Manager")
@@ -22,7 +23,7 @@ def main(argv=None):
     try:window=MainWindow(Library(root),no_usb=args.no_usb or args.smoke_test,test_mode=args.smoke_test)
     except (OSError,ValueError,sqlite3.Error) as error:
         if args.smoke_test:raise
-        QMessageBox.critical(None,'Cannot open','Cannot open local PicoAmiibo Manager data. Check the permissions of your user data folder.');return 1
+        QMessageBox.critical(None,t('Cannot open'),t('Cannot open local PicoAmiibo Manager data. Check the permissions of your user data folder.'));return 1
     window.show()
     if args.smoke_test:
         def capture():
@@ -30,17 +31,27 @@ def main(argv=None):
             try:
                 if args.screenshots:
                     args.screenshots.mkdir(parents=True,exist_ok=True)
-                    for i,name in enumerate(('home','library','load','switch2','diagnostics')):
-                        window.page(i);app.processEvents()
-                        if not window.grab().save(str(args.screenshots/(name+'.png'))):raise OSError('Screenshot write failed')
-                        result['pages'].append(name)
                     from manager.app.rewards import RewardsDialog
                     from manager.app.widgets import label
-                    dialog=RewardsDialog(window.rewards,'01000000034d0902',window)
-                    dialog.layout().insertWidget(1,label('TEST · Offline reference · no USB access','testBanner'))
-                    dialog.show();app.processEvents()
-                    if not dialog.grab().save(str(args.screenshots/'totk-rewards.png')):raise OSError('Rewards screenshot failed')
-                    dialog.close();result['pages'].append('totk-rewards')
+                    from PySide6.QtTest import QTest
+                    for code in ('en','fr'):
+                        window.language_combo.setCurrentIndex(window.language_combo.findData(code))
+                        for i,name in enumerate(('home','library','load','switch2','diagnostics')):
+                            window.mode_combo.setCurrentIndex(0);window.page(i);QTest.qWait(80)
+                            file=code+'-'+name
+                            if not window.grab().save(str(args.screenshots/(file+'.png'))):raise OSError('Screenshot write failed')
+                            result['pages'].append(file)
+                        window.check_shown();window.open_playlist();QTest.qWait(80)
+                        file=code+'-playlist'
+                        if not window.grab().save(str(args.screenshots/(file+'.png'))):raise OSError('Screenshot write failed')
+                        result['pages'].append(file)
+                        dialog=RewardsDialog(window.rewards,'01000000034d0902',window)
+                        dialog.layout().insertWidget(1,label('TEST · Offline reference · no USB access','testBanner'))
+                        dialog.show();QTest.qWait(80)
+                        file=code+'-totk-rewards'
+                        if not dialog.grab().save(str(args.screenshots/(file+'.png'))):raise OSError('Rewards screenshot failed')
+                        dialog.close();result['pages'].append(file)
+                    if len(result['pages'])!=14:raise ValueError('Missing bilingual captures')
                 result['success']=True
             except Exception as error:result['error']=type(error).__name__
             finally:

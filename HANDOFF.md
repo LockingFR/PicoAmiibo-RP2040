@@ -14,9 +14,11 @@ M6 host PASS: tools/test.ps1 rebuilt 14 C executables with ASan/UBSan and ran
 cycle removal/drain/wrap/signature/counter tests. Preliminary ARM build PASS
 for non-wireless pico; final clean-revision build/package still pending.
 
-Manager 1.2.0-preview.1 development adds persistent EN/FR choice, checked queue,
-card-to-Load navigation and complete per-tag readback. 67 Python/Qt tests passed
-before the final packaging/localization edits; final EXE validation is pending.
+M7 Manager 1.2.0-preview.1 adds persistent EN/FR choice, checked queue,
+card-to-Load navigation and complete per-tag readback. 67 Python/Qt tests PASS.
+Source smoke renders 14 EN/FR views with artificial data and USB disabled;
+French playlist and rewards screenshots visually inspected. Final EXE validation
+is pending. Test screenshots wait for Qt layout updates before capture.
 New outputs use dist/preview and artifacts/manager-preview, preserving 1.1.1.
 
 No automatic flashing, real device writes, Switch operation, or private profile

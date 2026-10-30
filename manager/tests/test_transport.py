@@ -37,6 +37,7 @@ class Port:
                 if self.m.error=='corrupt_read':data[-1]^=1
                 self.rx+=data
             elif command==b'EXIT':self.rx+=b'BYE\n'
+            elif command==b'CAPS':self.rx+=b'ERR command\n'
             else:raise AssertionError(command)
         return len(part)
     def read(self,n):
