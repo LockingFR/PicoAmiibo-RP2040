@@ -11,9 +11,18 @@ exclusion below; the following sections describe the preserved baseline.
 
 M6 host PASS: 14 rebuilt C executables (ASan/UBSan), 13 Python tests; playlist
 power-cut, parser, and cycle behavior are host simulations. Preliminary ARM
-compile PASS. M7: 67 Python/Qt tests PASS and source smoke renders 14 EN/FR
-views with USB disabled. Final clean-revision memory audit, EXE packaging and
-physical qualification remain pending. The installed working firmware is unchanged.
+compile and clean-revision memory audit PASS: 49,168 flash bytes, 57,028 SRAM
+bytes including stack/heap reservations; no radio/dynamic-allocation symbols.
+M7/M8: 67 Python/Qt tests PASS. Actual Windows EXE and extracted ZIP each render
+14 EN/FR views with USB disabled. ZIP destination hashes verify 255 files and
+all three included UF2s are empty Pico images. The extracted EXE runs with no
+system Python on PATH. The checked Load button is visible above library cards.
+
+Artifacts: artifacts/manager-preview and artifacts/prototype-p3-multislot.
+Manager build source df42fab; firmware source c79e272. Both feature branches are
+pushed; stable main stays 973d528. See HANDOFF.md for exact delivery hashes.
+Physical 0.2.0 qualification remains UNTESTED. The installed working firmware,
+private library, Switch and saves have not been changed by this extension.
 
 ## English Manager 1.1.1
 

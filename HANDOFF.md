@@ -16,10 +16,9 @@ for non-wireless pico; final clean-revision build/package still pending.
 
 M7 Manager 1.2.0-preview.1 adds persistent EN/FR choice, checked queue,
 card-to-Load navigation and complete per-tag readback. 67 Python/Qt tests PASS.
-Source smoke renders 14 EN/FR views with artificial data and USB disabled;
-French playlist and rewards screenshots visually inspected. Final EXE validation
-PASS on the preliminary EXE (14 views). Final layout polish keeps the batch Load
-button above the cards and gives the series filter room in French; rebuild it.
+Source and frozen EXE smoke render 14 EN/FR views with artificial data and USB
+disabled. Final French library, playlist and rewards views visually inspected.
+Final layout keeps batch Load above the cards and the French filter readable.
 Test screenshots wait for Qt layout updates before capture.
 New outputs use dist/preview and artifacts/manager-preview, preserving 1.1.1.
 
@@ -28,6 +27,26 @@ Firmware delivery at artifacts/prototype-p3-multislot is from clean c79e272:
 radio/dynamic-allocation symbols; empty UF2 SHA256
 4b2a389100a20b41d79b869c1225a30be2047e5fb7f9095d0d4d70ec478a4cb4.
 Firmware and its source commit are independent of later UI/documentation polish.
+
+## M8 delivered preview, hardware pending
+
+- Manager build/package source: df42fab72178ee839df479fa5eee08743c5e7825.
+- tools/build_manager.ps1 PASS: final EXE built; 67 tests; 14-view frozen smoke.
+- Windows ZIP: artifacts/manager-preview/PicoAmiibo-Manager-1.2.0-preview.1-windows-x64.zip.
+- ZIP SHA256: c691bd58922dd7b07f6ee1d3350885f0d5783ef493f4d5d7f61f071f381185d7.
+- EXE SHA256: 6f51c8c69ed5d48f474ed77c08df5d73b46eae0e92c35ade8d6b7a6f12638916.
+- Fresh ZIP extraction: 255 destination entries reread against manifest hashes;
+  no private library/dump/key inputs; three correctly labeled empty Pico UF2s.
+- Extracted EXE PASS: 14 bilingual views with USB disabled and system Python
+  absent from PATH. Evidence: artifacts/manager-preview/portable-*.json.
+- Firmware audit PASS: clean c79e272, pico, flash/SRAM within bounds, no radio or
+  dynamic-allocation symbols. See artifacts/prototype-p3-multislot/manifest.json.
+- Both GitHub feature branches contain the development commits. Stable main
+  remains 973d528. This documentation-only milestone does not alter the binaries.
+
+Next action: user manually installs the preview UF2 and performs the two-tag
+physical test in docs/PLAYLIST_V2.md, including wrap/reboot/single replacement.
+Do not mark 0.2.0 or playlist NFC scanning hardware-qualified until that evidence.
 
 No automatic flashing, real device writes, Switch operation, or private profile
 changes in this extension. Firmware 0.2.0 hardware qualification is UNTESTED.
