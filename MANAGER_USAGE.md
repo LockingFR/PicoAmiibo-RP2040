@@ -1,4 +1,4 @@
-# PicoAmiibo Manager 1.1.0 — Windows guide
+# PicoAmiibo Manager 1.1.1 — Windows guide
 
 ## Open the portable application
 

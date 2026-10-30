@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
         self.metadata_button=button('Refresh metadata',self.refresh_metadata);self.metadata_button.setEnabled(self.online.isChecked());l.addWidget(self.metadata_button)
         l.addWidget(button('Open data folder',lambda:QDesktopServices.openUrl(QUrl.fromLocalFile(str(self.library.root)))));lay.addWidget(p)
         p,l=panel();l.addWidget(label('Load history','cardTitle'))
-        self.history_table=QTableWidget(0,5);self.history_table.setHorizontalHeaderLabels(['Date','Amiibo','Port','Verification','Jeu'])
+        self.history_table=QTableWidget(0,5);self.history_table.setHorizontalHeaderLabels(['Date','Amiibo','Port','Verification','Game'])
         self.history_table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers);self.history_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.ResizeToContents);self.history_table.horizontalHeader().setStretchLastSection(True);self.history_table.setMinimumHeight(230);l.addWidget(self.history_table);lay.addWidget(p)
         p,l=panel();l.addWidget(label('Recovery and versions','cardTitle'));l.addWidget(label(f'Manager {__version__} · Windows x64\nThe Manager never flashes firmware. Recovery: hold BOOTSEL while connecting the Pico to the PC, confirm the correct RPI-RP2 drive, then manually copy the recovery UF2.\n0.1.1: release preceding the reported Epona success. 0.1.2: version without L+R; separate console qualification.','muted',True));lay.addWidget(p)
         l.addWidget(button('Open recovery firmware folder',self.open_firmwares))
@@ -177,7 +177,7 @@ class MainWindow(QMainWindow):
         self._start('probe',lambda _:self.transport.probe(device.port),done,failed)
     def _update_device_ui(self):
         if self.device:
-            title='Configuration USB';hint='The Pico is ready to receive an amiibo.' if self.probe else 'Checking communication…'
+            title='USB configuration';hint='The Pico is ready to receive an amiibo.' if self.probe else 'Checking communication…'
             if self.probe:title='Pico identified · '+self.device.port
         elif any(d.kind=='bootloader' for d in self.devices):title='BOOTSEL / RPI-RP2 mode';hint='The Pico is in its bootloader. Manually install your firmware, then restart it to load an amiibo.'
         elif len([d for d in self.devices if d.kind=='cdc'])>1:title='Multiple Pico devices detected';hint='Choose the correct Pico port on the Load page.'

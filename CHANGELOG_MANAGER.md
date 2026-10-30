@@ -1,5 +1,10 @@
 # PicoAmiibo Manager changelog
 
+## 1.1.1 — 30 October 2026
+
+- Complete English labels for the history Game column and USB configuration state.
+- Refresh the portable Windows package and screenshots; no firmware/protocol changes.
+
 ## 1.1.0 — 30 October 2026
 
 - English interface, errors, Switch 2 guide, reward summaries, and documentation.

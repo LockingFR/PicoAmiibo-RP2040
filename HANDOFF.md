@@ -1,6 +1,6 @@
 # Development handoff — PicoAmiibo-RP2040
 
-Current desktop release: **Manager 1.1.0**, English. Current firmware source:
+Current desktop release: **Manager 1.1.1**, English. Current firmware source:
 **0.1.2**, real non-W Pico. The working 0.1.1 delivery remains preserved separately.
 
 Read CODEX_START.md, STATUS.md, MANAGER_ARCHITECTURE.md and

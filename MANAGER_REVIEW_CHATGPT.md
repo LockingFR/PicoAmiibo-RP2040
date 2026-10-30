@@ -1,7 +1,7 @@
 # Standalone technical review — PicoAmiibo Manager
 
 This document describes the maintained implementation and evidence as of
-30 October 2026. Current English desktop version: 1.1.0.
+30 October 2026. Current English desktop version: 1.1.1.
 
 ## Existing firmware
 
@@ -100,7 +100,7 @@ The earlier network test fetched 932 entries and three images into a test profil
 - Real console: the user explicitly reported Epona after 0.1.1. No saved-game
   inspection, bus trace, or comprehensive compatibility campaign was performed.
 
-The English 1.1.0 UI and firmware 0.1.2 still need their own physical qualification.
+The English 1.1.1 UI and firmware 0.1.2 still need their own physical qualification.
 Private library imports do not prove console acceptance for all imported figures.
 The repo and release contain no user library, dump, key, or save.
 

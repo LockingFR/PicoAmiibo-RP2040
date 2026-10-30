@@ -1,7 +1,7 @@
 # PicoAmiibo Manager — implementation architecture
 
 The desktop application reuses the existing single-tag firmware and wire protocol.
-The English 1.1.0 release changes presentation/catalog data, not the C firmware.
+The English 1.1.1 release changes presentation/catalog data, not the C firmware.
 
 ## Preserved foundation
 

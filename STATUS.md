@@ -1,6 +1,6 @@
 # Project status — 30 October 2026
 
-## English Manager 1.1.0
+## English Manager 1.1.1
 
 English application, guide, errors, reward summaries, and maintained documentation.
 36 offline reward profiles cover 33 specific figures, including Mineru. The

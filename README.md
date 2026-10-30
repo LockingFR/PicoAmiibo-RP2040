@@ -17,7 +17,7 @@ reproducible host tests. It does not modify the console, game, or save files.
   observation, not a claim that every game or amiibo has been qualified.
 - **Windows Manager:** real CDC identification/readback was observed with 0.1.1.
   A 1.0.1 transfer is recorded as verified, with game recognition reported by the user.
-- **Manager 1.1.0:** English interface, documentation, and reward catalog; tested
+- **Manager 1.1.1:** English interface, documentation, and reward catalog; tested
   through automated Qt tests and a real Windows EXE smoke test with USB disabled.
   This English build has not received a new end-to-end console qualification.
 - **Firmware 0.1.2:** removes the BOOTSEL L+R gesture. It builds and passes host
